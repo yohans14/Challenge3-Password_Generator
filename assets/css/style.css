@@ -29,7 +29,6 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -41,7 +40,9 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
-
+.card-header h2 {
+  text-align: center;
+}
 .card-header::after {
   content: " ";
   display: block;
@@ -116,6 +117,11 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+.handler {
+  align-items: center;
+	margin: 15px 0;
 }
 
 @media (max-width: 690px) {
