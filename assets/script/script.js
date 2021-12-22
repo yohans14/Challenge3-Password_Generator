@@ -1,5 +1,5 @@
 // Assignment code here
- 
+window.alert ("Please choose a length of 8 - 128 and check the character types box")
 // DOM
 const passwordEl = document.getElementById('password');
 const lengthEl = document.getElementById('length');
@@ -20,7 +20,6 @@ const randomFunc = {
 // Generate event listener
 generateEl.addEventListener('click', () => {
   const length = +lengthEl.value;
-  window.prompt ("please check the box and select the length")
   const hasLower = lowercaseEl.checked;
   const hasUpper = uppercaseEl.checked;
   const hasNumber = numbersEl.checked;
@@ -60,7 +59,10 @@ function generatePassword(lower, upper, number, symbol, length){
     })
   }
   const finalPassword = generatedPassword.slice(0,length);
-    return finalPassword;     
+
+    window.alert("Here is your generated password" + " " + finalPassword);   
+
+    return finalPassword; 
 }
 
 // Generator function
